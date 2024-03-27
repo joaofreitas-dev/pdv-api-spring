@@ -31,6 +31,7 @@ public class User implements Serializable {
     @Enumerated(EnumType.STRING)
     private Role role = Role.ROLE_CLIENTE;
 
+
     public enum Role {
         ROLE_ADMIN, ROLE_CLIENTE
     }
