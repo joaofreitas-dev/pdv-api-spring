@@ -1,8 +1,6 @@
-package com.joaofreitas.pdvapi.web.dtos;
+package com.joaofreitas.pdvapi.web.dtos.user;
 
-import jakarta.validation.constraints.Email;
-import jakarta.validation.constraints.NotBlank;
-import jakarta.validation.constraints.Size;
+import jakarta.validation.constraints.*;
 import lombok.*;
 
 @AllArgsConstructor
@@ -10,7 +8,8 @@ import lombok.*;
 @Getter
 @Setter
 @ToString
-public class UserLoginDto {
+public class UserCreateDto {
+
     @NotBlank
     @Email(message = "E-mail inválido.", regexp = "^[a-z0-9.+-]+@[a-z0-9.-]+\\.[a-z]{2,}$")
     private String username;

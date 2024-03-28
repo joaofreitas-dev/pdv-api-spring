@@ -32,7 +32,8 @@ public class SpringSecurityConfig {
         auth
           .requestMatchers(
             antMatcher(HttpMethod.POST, "/api/v1/users"),
-            antMatcher(HttpMethod.POST, "/api/v1/auth")
+            antMatcher(HttpMethod.POST, "/api/v1/auth"),
+                  antMatcher(HttpMethod.GET, "/api/v1/categories")
           )
           .permitAll()
           .anyRequest()

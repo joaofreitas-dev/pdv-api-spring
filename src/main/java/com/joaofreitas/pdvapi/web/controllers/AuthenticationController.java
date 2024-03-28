@@ -2,7 +2,7 @@ package com.joaofreitas.pdvapi.web.controllers;
 
 import com.joaofreitas.pdvapi.jwt.JwtToken;
 import com.joaofreitas.pdvapi.jwt.JwtUserDetailsService;
-import com.joaofreitas.pdvapi.web.dtos.UserLoginDto;
+import com.joaofreitas.pdvapi.web.dtos.user.UserLoginDto;
 import com.joaofreitas.pdvapi.web.exceptions.ErrorMessage;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.validation.Valid;

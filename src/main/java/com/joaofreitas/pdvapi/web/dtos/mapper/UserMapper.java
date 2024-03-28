@@ -1,8 +1,8 @@
 package com.joaofreitas.pdvapi.web.dtos.mapper;
 
 import com.joaofreitas.pdvapi.entities.User;
-import com.joaofreitas.pdvapi.web.dtos.UserCreateDto;
-import com.joaofreitas.pdvapi.web.dtos.UserResponseDto;
+import com.joaofreitas.pdvapi.web.dtos.user.UserCreateDto;
+import com.joaofreitas.pdvapi.web.dtos.user.UserResponseDto;
 import org.modelmapper.ModelMapper;
 import org.modelmapper.PropertyMap;
 
@@ -27,7 +27,7 @@ public class UserMapper {
         return mapper.map(user, UserResponseDto.class);
     }
 
-    public static List<UserResponseDto> toListDto (List<User> usuarios) {
-        return usuarios.stream().map(user -> toDto(user)).collect(Collectors.toList());
+    public static List<UserResponseDto> toListDto (List<User> userList) {
+        return userList.stream().map(user -> toDto(user)).collect(Collectors.toList());
     }
 }

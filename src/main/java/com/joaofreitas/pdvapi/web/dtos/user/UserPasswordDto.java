@@ -1,4 +1,4 @@
-package com.joaofreitas.pdvapi.web.dtos;
+package com.joaofreitas.pdvapi.web.dtos.user;
 
 import jakarta.validation.constraints.*;
 import lombok.*;

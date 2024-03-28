@@ -2,9 +2,9 @@ package com.joaofreitas.pdvapi.web.controllers;
 
 import com.joaofreitas.pdvapi.entities.User;
 import com.joaofreitas.pdvapi.services.UserService;
-import com.joaofreitas.pdvapi.web.dtos.UserCreateDto;
-import com.joaofreitas.pdvapi.web.dtos.UserPasswordDto;
-import com.joaofreitas.pdvapi.web.dtos.UserResponseDto;
+import com.joaofreitas.pdvapi.web.dtos.user.UserCreateDto;
+import com.joaofreitas.pdvapi.web.dtos.user.UserPasswordDto;
+import com.joaofreitas.pdvapi.web.dtos.user.UserResponseDto;
 import com.joaofreitas.pdvapi.web.dtos.mapper.UserMapper;
 import com.joaofreitas.pdvapi.web.exceptions.ErrorMessage;
 import io.swagger.v3.oas.annotations.Operation;
